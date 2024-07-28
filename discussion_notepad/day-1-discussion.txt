@@ -1,0 +1,119 @@
+Day 1:
+---------
+intro to the training/ Course Outline
+
+Java Programming (3 days)
+	Describe the object-oriented programming approach
+	Explain Java syntax and coding conventions
+	Use Java constructs and operators
+	Use core Java APIs, such as Collections, Streams, IO, and Concurrency
+	Deploy Java SE applications
+	
+	
+trainee introduction
+
+trainer introduction
+
+https://www.linkedin.com/in/rajeevguptajavatrainer/
+https://www.youtube.com/@busycoderacademy
+
+
+git hub
+https://github.com/rgupta00/Deutsche-bank-4-days-training-22july24
+
+required tools:
+--------------
+vm software to be used in this training:
+
+jdk 17
+sts 4 ide(eclipse)
+
+
+how to check the software setup?
+-------------------------------
+java -version
+
+
+
+Day 1:
+----------
+Introduction to java
+basics procedural programming
+	data type
+	looping, if else, switch, array
+	dry run examples
+Introduction to oops
+class, object, constructors, init block
+static init block 
+static method
+java coding convensions
+call by value vs call by reference
+
+relationship bw the objects
+Inheritance 
+Type of inheritance
+Interface abstract class
+final keyword
+
+
+
+some mcq:
+-----------
+
+Q. what is the op?
+
+long a=9958543978;
+System.out.println(a);
+
+
+Q. what is the op?
+char i=97; //storing int into char
+System.out.println(i);
+	
+
+Q. What is the op?
+	int i=028;
+	System.out.println(i);
+
+
+Note: No starting from 0 are octal, 0-7 
+      how to convert octal to int
+	
+	0 2 6 
+	  2*8 power 1 +  6*8 power 0
+	  2*8+6=22
+
+
+Q. What is the op?
+
+ upcasting vs downcasting
+ 
+	byte i=33;
+	byte j=22;
+	byte k=i+j;
+	System.out.println(k);
+	    
+
+Note : range of byte (8 bits): -178 0 to +128
+
+
+Q. what is the op?
+
+	  int $=44;
+	  System.out.println($);
+
+
+
+Q. How to write a program to call main twice? Think?
+
+
+Q. how to execute comments?
+// \u000d System.out.println("i love java");
+
+
+Q. What is the op?
+		int String =33;
+		System.out.println(String);
+
+
+
