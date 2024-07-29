@@ -1,31 +1,44 @@
-Day 1:
----------
-intro to the training/ Course Outline
-
 Java Programming (3 days)
+=======================
 	Describe the object-oriented programming approach
 	Explain Java syntax and coding conventions
 	Use Java constructs and operators
 	Use core Java APIs, such as Collections, Streams, IO, and Concurrency
-	Deploy Java SE applications
+	java 8 stream processing
+	Deploy Java SE applications how to create jar file of your applications
 	
-	
+
+Day 1:
+---------
+intro to the training/ Course Outline
+
 trainee introduction
+	refresher course in java
+	getting started
+	adv user
 
 trainer introduction
 
 https://www.linkedin.com/in/rajeevguptajavatrainer/
 https://www.youtube.com/@busycoderacademy
 
+recorded playlist on core java:
+https://www.youtube.com/watch?v=KH7YhgqjAyQ&list=PLv2-IhRmhbySgIQo3rH8KnclTSOYAp2xG&ab_channel=BusyCoderAcademy
 
 git hub
-https://github.com/rgupta00/Deutsche-bank-4-days-training-22july24
+https://github.com/rgupta00/oracle_core_java_3days_29_31_july24
 
 required tools:
 --------------
-vm software to be used in this training:
+2 sw:
 
-jdk 17
+jdk 17 (java dev kit)
+
+java --version
+java 17.0.10 2024-01-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.10+11-LTS-240)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.10+11-LTS-240, mixed mode, sharing)
+
 sts 4 ide(eclipse)
 
 
@@ -54,6 +67,143 @@ Inheritance
 Type of inheritance
 Interface abstract class
 final keyword
+
+how to run hello world on IDE:
+-------------------------------
+/*
+ * how to programming?
+ * practice and play with the code
+ */
+
+//single line comments
+
+public class HelloWorld {
+
+	public static void main(String args[]) {
+		System.out.println("we all are champs!");
+	}
+}
+
+what is Java?
+--------------
+OOPL that run over JVM and bundle with rich set of api
+
+OOPL: class , object , inheritance ....
+	C++ Python...
+	
+JVM: Java virtual machine
+	is very similer to os that is resp for manging the life cycle of java applications
+	
+	os: window / linux
+
+	C++ vs Java
+
+Q> how sw dev of java is diff then c++
+
+how it ship my sw to the user?
+
+jar or war file (compressed file)
+
+sw
+code --> byte code --> bundled into jar file
+
+
+3 package mechnism in java
+-------------------------
+jar : Java ARchive
+war: Web ARchive
+ear: Enterprise ARchive
+
+
+basics procedural programming
+-------------------------------
+	data type
+	looping, if else, switch, array
+	dry run examples
+	
+What programming is all about?
+------------------------------
+	logic and dry run
+	
+	print 10 starts
+	System.out.println("***********"); XXXX
+	
+	better:
+	   for(int i=0;i<10;i++) {
+			System.out.print("*");
+		}
+		
+**********
+**********
+**********
+**********
+**********
+..10 time
+
+10X10 starts=100 pattern
+
+
+
+		for(int i=0;i<5;i++) {
+			for(int j=0;j<=i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+*
+**
+***
+****
+*****
+	
+what looping does?
+------------------
+No diff bw for and while loop:
+
+for(int i=0;i<5;i++){
+}
+
+int i=0;
+while(i<5){
+
+	i++;
+}
+
+
+do..while: menu driven app
+------------
+int i=0;
+do{
+
+  i++;
+}while(i<5);
+
+
+control statement :
+if else 
+nested if else
+switch case
+
+
+		System.out.println("PE your age");
+		Scanner scanner=new Scanner(System.in);
+		int age= scanner.nextInt();
+		if(age>=18)
+			System.out.println("voting right is given");
+		else
+			System.out.println("voting right is not given");
+		scanner.close();
+		
+		
+Arrays in Java:
+==============
+to store marks of 20 students
+int marks[]=new int[5];
+
+int marks[20]; //this will not work
+
+arrays are object in java, new operators
 
 
 
