@@ -1,0 +1,41 @@
+Java backend engg roadmap 2024:
+=============================
+already good in db, jdbc would be easy for you
+
+core java : 15 days
+---------------------
+basic logic, dry looping arrays
+class object inhertance polymorphism
+loose couping and high cohesion
+interfaece abs class, final 
+string string builder
+exception handling
+java collection 
+threads
+jdbc
+
+design : 10 days
+----------------
+SOLID 
+design pattern: video to you
+
+adv java:
+-----------
+J2EE basic idea
+servlet jsp (imp just to understand) 3hr session
+https://www.youtube.com/watch?v=9BAVhAbVLU4&t=4323s&ab_channel=BusyCoderAcademy
+
+basic idea of hibernate ( replacemnt of jdbc)
+https://www.youtube.com/watch?v=yjRrnv_BAR8&list=PLv2-IhRmhbyRm6ro3IQXEF-B1pW-CXQAi&ab_channel=BusyCoderAcademy
+
+spring framework
+-----------
+playlist
+https://www.guvi.in/courses/springenglish/
+
+spring boot
+-----------
+https://www.guvi.in/courses/web-development/spring-boot/
+
+
+
