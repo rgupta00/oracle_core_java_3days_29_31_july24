@@ -81,6 +81,9 @@ public class A_HelloWorld {
 
 	
 						
+Q> how to handle exception in threads?
+------------------------------------
+	
 						
 						
 						
@@ -89,10 +92,96 @@ public class A_HelloWorld {
 						
 						
 						
-						
+
+
+Introduction to JUC
+
+
+thread , runniable, wait notify... : classical threads
+main problem in classical thread:
+	it is complicated to solve common issues
+	Runnable: void , ex 
+	
+in java 5: new packagge 
+	java util concurrent package
+	modern way of dealing with threads
+	
+	Thread pool: jvm
+	Callable vs Runnable
+	ds changes: thread safe ds
+	
+	t1		LL
+	t2
+	https://www.oreilly.com/library/view/hands-on-high-performance/9781788838382/52562b0a-045e-4c2d-b89b-bae91972634f.xhtml
+	
+	
+	Intro to TP Thread pool
+	https://medium.com/@erayaraz10/a-comprehensive-guide-to-thread-pools-in-java-75a06657fda
+	
+	job:
+		cpu bound process: algo
+		IO bound process
+		?
+		
+	
+	
+	
+	
+	
+	
+
+
+
+
+
 	
 Jdbc ( java database connectivity)
+-----------------------------------
+DBA: SQL
 
-Introduction to annotation
+
+		curd (c u r d)
+java-------------------------------->DB
+
+	driver jdbc: aka translator java and db
+	
+	db vendors:
+	---------
+	mysql: mysql connector j
+	oracle: diff driver
+	...
+	...
+
+Jdbc ( Java DataBase Connectivity)
+
+hindi	------------------------------ franch
+			english
+
+
+https://www.youtube.com/playlist?list=PLv2-IhRmhbyS1HDuE0XR6UMJr7Wlvx1CC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+java 8 stream processing
+in java 8: declartive data processing using streams
+
+
 
 
