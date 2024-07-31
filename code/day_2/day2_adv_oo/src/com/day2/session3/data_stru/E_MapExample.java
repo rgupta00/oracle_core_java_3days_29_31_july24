@@ -3,11 +3,11 @@ import java.util.*;
 public class E_MapExample {
 
 	public static void main(String[] args) {
-		Map<String, Integer> marksMap=new LinkedHashMap<>();//HashMap vs LinkedHashMap vs TreeMap
+		Map<String, Integer> marksMap=new TreeMap<>();//HashMap vs LinkedHashMap vs TreeMap
 		marksMap.put("raj", 78);
 		marksMap.put("ekta", 88);
 		
-//		marksMap.put(null, null);
+		marksMap.put(null, 66);
 		
 		marksMap.putIfAbsent("ekta", 98);
 		marksMap.put("keshav", 75);

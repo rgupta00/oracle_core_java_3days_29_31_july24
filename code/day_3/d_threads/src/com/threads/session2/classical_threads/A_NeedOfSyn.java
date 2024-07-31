@@ -1,44 +1,29 @@
 package com.threads.session2.classical_threads;
 //Printer ---> 3 employee : race condition
 
-import java.util.concurrent.Semaphore;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.ReentrantLock;
-
 class Printer {
 
-	public void printLetter(String letter) {
+	private Object lock=new Object();
+	public  void printLetter(String letter) {
 
-		System.out.print("[");
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
+		//...
+		///...
+		synchronized (lock) {
+
+			System.out.print("[");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+			}
+			System.out.println(letter + "]");
 		}
-		System.out.println(letter + "]");
+		
+		//..
+		//..
 
 	}
 
 }
-
-//how to achive fairness policy?
-//class Printer{
-//    private Lock lock=new ReentrantLock(true);//ReentrantLock vs ReadWriteLock
-//
-//    public void printLetter(String letter){
-//       try{
-//           lock.lock();
-//           System.out.print("[");
-//           try{
-//               Thread.sleep(1000);
-//           }catch (InterruptedException e){}
-//           System.out.println(letter+ "]");
-//       }finally {
-//           lock.unlock();
-//       }
-//    }
-//
-//}
 
 
 
