@@ -161,10 +161,25 @@ hindi	------------------------------ franch
 https://www.youtube.com/playlist?list=PLv2-IhRmhbyS1HDuE0XR6UMJr7Wlvx1CC
 
 
+jdbc : auto commit in jdbc is on?
+	executeUpdate()
+	
+try{
+	conn.setAutoCommit(false);
+	....
+	conn.commit();
+}catch(................ e){
+	conn.rollback();
+}
 
+jdbc : tx: manual tx
+programmer is resp for tx mgt 
+:(
 
-
-
+Spring framework?
+	declartive tx
+	@Transactional
+	
 
 
 
