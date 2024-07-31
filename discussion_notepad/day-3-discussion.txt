@@ -1,0 +1,98 @@
+Java Programming (3 days)
+======================
+Day 3:
+-------
+Collections: aka readymade ds in java
+	List: allow duplicate
+		ArrayList, LinkedList, Vector (X)
+		
+	set: dont allow duplicate
+		HashSet
+		LinkedHashSet
+		TreeSet
+		
+	Map: k--> v
+		HashMap
+		LinkedHashMap
+		TreeMap
+		
+introduction to generics <>
+	provide type safty to the data
+
+Multithreading Concurrency
+-------------------------
+	what is threads
+	OS and process and threads
+	how to create threads in java
+	various way to create the threads in java
+	thread life cycle
+	synchronization 
+	dead lock, how to avoide dead lock
+	p and c problem
+	
+	modern java threads api: java util concurrent package
+						juc: lib: many modern method
+						
+						
+						
+	Ex1: basics of threads:
+--------------------------------
+package com.threads.session1.classical_threads;
+//Job and worker analogy
+//Thread(object of thraeds act as worker) and Runnable(aka job)
+
+class Job implements Runnable{
+	@Override
+	public void run() {
+		System.out.println("job of thread stated: "+ Thread.currentThread().getName());
+		try {
+			Thread.sleep(1200);
+		}catch(InterruptedException e) {}
+		System.out.println("job of thread done: "+ Thread.currentThread().getName());
+	}
+	
+}
+
+public class A_HelloWorld {
+    public static void main(String[] args) {
+    	System.out.println("Main job of thread: "+ Thread.currentThread().getName());
+    	
+    	Job job=new Job();
+    	Thread thread=new Thread(job , "a");
+    	Thread thread2=new Thread(job , "b");
+    	Thread thread3=new Thread(job , "c");
+    	
+    	
+    	thread.start();//never call run() directly? 
+    	//thread.start();
+    	thread2.start();
+    	thread3.start();
+    	
+    	//how to ensure that main thrad should finished to end: orphan threads
+    	try {
+    		thread.join();
+    		thread2.join();
+    		thread3.join();
+    	}catch(InterruptedException e) {}
+    	
+    	System.out.println("Main job of thread done : "+ Thread.currentThread().getName());
+    }
+}
+
+	
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+	
+Jdbc ( java database connectivity)
+
+Introduction to annotation
+
+
